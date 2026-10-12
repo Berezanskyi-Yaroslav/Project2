@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+п»ї#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -8,20 +8,20 @@ int main() {
     int quantity;
     float price;
     float totalValue;
-    puts("\nВведіть назву товару:");
+    puts("\nР’РІРµРґС–С‚СЊ РЅР°Р·РІСѓ С‚РѕРІР°СЂСѓ:");
     scanf("%s", productName);
-    puts("Введіть кількість на складі:");
+    puts("Р’РІРµРґС–С‚СЊ РєС–Р»СЊРєС–СЃС‚СЊ РЅР° СЃРєР»Р°РґС–:");
     scanf("%d", &quantity);
-    puts("Введіть ціну за одиницю (грн):");
+    puts("Р’РІРµРґС–С‚СЊ С†С–РЅСѓ Р·Р° РѕРґРёРЅРёС†СЋ (РіСЂРЅ):");
     scanf("%f", &price);
     totalValue = quantity * price;
     printf("\n========================================\n");
-    printf("          ІНФОРМАЦІЯ ПРО ТОВАР          \n");
+    printf("          Р†РќР¤РћР РњРђР¦Р†РЇ РџР Рћ РўРћР’РђР           \n");
     printf("========================================\n");
-    printf("Назва товару:      %s\n", productName);
-    printf("Кількість:         %d шт.\n", quantity);
-    printf("Ціна за одиницю:   %.2f грн\n", price);
-    printf("Загальна вартість: %.2f грн\n", totalValue);
+    printf("РќР°Р·РІР° С‚РѕРІР°СЂСѓ:      %s\n", productName);
+    printf("РљС–Р»СЊРєС–СЃС‚СЊ:         %d С€С‚.\n", quantity);
+    printf("Р¦С–РЅР° Р·Р° РѕРґРёРЅРёС†СЋ:   %.2f РіСЂРЅ\n", price);
+    printf("Р—Р°РіР°Р»СЊРЅР° РІР°СЂС‚С–СЃС‚СЊ: %.2f РіСЂРЅ\n", totalValue);
     printf("========================================\n");
     return 0;
 }
